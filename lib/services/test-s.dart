@@ -5,7 +5,7 @@ class Services {
   static Welcome userInformation = new Welcome();
   static String url = "https://reqres.in/api/users/2";
 
-  static Future Demo() async {
+  static Future demo() async {
     final response = await http.get(url);
 
     if (response.statusCode == 200) {

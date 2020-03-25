@@ -67,7 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body:
       FutureBuilder(
-        future: Services.Demo(),
+        future: Services.demo(),
         builder: (context, snapShot) {
           if (snapShot.connectionState == ConnectionState.done) {
             return Container(
